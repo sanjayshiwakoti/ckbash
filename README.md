@@ -1,8 +1,9 @@
-## CK Automation
+#CK Automation
 To Automate the pushing in git branch
 
-##Install
-Copy and configure as per your project location
+#Install
+Copy and configure as per your project location in .bashrc file
+
 ```
 export PATH_CK_CENTRAL=path-to-ck/ck-central  
 export PATH_CK_CENTRAL_CLIENT=path-to-ck/ck-central-client  
@@ -15,7 +16,7 @@ export PATH_CK_DOCUMENTDB=path-to-ck/ck-documentdb
 export PATH_CK_PRODUCT=path-to-ck/ck-product  
 ```  
 
-##Usage  
+#Usage  
 * To pull all the repositories  
 `./ck.sh pull`
 * To tag the repositories  
