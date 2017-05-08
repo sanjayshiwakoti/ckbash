@@ -39,6 +39,8 @@ fetch() {
 pull_on() {
 	echo ""
 
+	fetch_on $1
+
 	echo "Change directory: $1"
 	cd $1
 
@@ -50,6 +52,8 @@ pull_on() {
 
 tag_on() {
 	echo ""
+
+	fetch_on $1
 
 	echo "Change directory: $1"
 	cd $1
@@ -75,6 +79,8 @@ tag() {
 
 push_on() {
 	echo ""
+
+	fetch_on $1
 
 	echo "Change directory: $1"
 	cd $1
