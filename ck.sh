@@ -123,6 +123,33 @@ pull() {
 	echo "All Pulling Done"	
 }
 
+tag_delete_on() {
+	echo ""
+
+	fetch_on $1
+
+	echo "Change directory: $1"
+	cd $1
+
+	echo "Tag $2 $BRANCH from $REMOTE" 
+	git push origin --delete $2
+	git tag -d $2
+
+	echo ""
+}
+
+tag_delete() {
+	echo "Tag deleting for each project"
+
+	tag_delete_on $PATH_CK_CENTRAL $1
+	tag_delete_on $PATH_CK_DOCUMENTDB $1
+	tag_delete_on $PATH_CK_PRODUCT $1
+	tag_delete_on $PATH_CK_DISCOVERER $1
+	tag_delete_on $PATH_CK_CUSTOMER $1
+	
+	echo "All Tagging Deleted"	
+}
+
 #fetch
 # Run as per CLI argument
 # Usage:
