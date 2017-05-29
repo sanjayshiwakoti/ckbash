@@ -14,6 +14,7 @@ export PATH_CK_DISCOVERY_CLIENT=path-to-ck/ck-discovery-client
 export PATH_CK_DISCOVERY_SERVICE=path-to-ck/ck-discovery-service  
 export PATH_CK_DOCUMENTDB=path-to-ck/ck-documentdb  
 export PATH_CK_PRODUCT=path-to-ck/ck-product  
+export PATH_CK_CENTRAL_B2C=path-to-ck/ck-central-client-b2c
 ```  
 
 **Usage**  

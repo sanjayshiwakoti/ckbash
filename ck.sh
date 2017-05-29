@@ -32,6 +32,7 @@ fetch() {
 	fetch_on $PATH_CK_DISCOVERY_SERVICE	
 	fetch_on $PATH_CK_CENTRAL_SERVICE
 	fetch_on $PATH_CK_CENTRAL_CLIENT
+	fetch_on $PATH_CK_CENTRAL_B2C
 	
 	echo "Fetch and Checkout Done"	
 }
@@ -119,6 +120,7 @@ pull() {
 	pull_on $PATH_CK_DISCOVERY_SERVICE	
 	pull_on $PATH_CK_CENTRAL_SERVICE
 	pull_on $PATH_CK_CENTRAL_CLIENT
+	pull_on $PATH_CK_CENTRAL_B2C
 	
 	echo "All Pulling Done"	
 }
