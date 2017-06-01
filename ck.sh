@@ -73,6 +73,7 @@ tag() {
 	tag_on $PATH_CK_DOCUMENTDB $1
 	tag_on $PATH_CK_PRODUCT $1
 	tag_on $PATH_CK_DISCOVERER $1
+	tag_on $PATH_CK_DISCOVERY_SERVICE $1
 	tag_on $PATH_CK_CUSTOMER $1
 	
 	echo "All Tagging Done"	
@@ -101,6 +102,7 @@ push() {
 	push_on $PATH_CK_DOCUMENTDB $1 
 	push_on $PATH_CK_PRODUCT $1
 	push_on $PATH_CK_DISCOVERER $1 
+	push_on $PATH_CK_DISCOVERY_SERVICE $1
 	push_on $PATH_CK_CUSTOMER $1
 	push_on $PATH_CK_CENTRAL_SERVICE $1
 	push_on $PATH_CK_CENTRAL_CLIENT $1
@@ -147,6 +149,7 @@ tag_delete() {
 	tag_delete_on $PATH_CK_DOCUMENTDB $1
 	tag_delete_on $PATH_CK_PRODUCT $1
 	tag_delete_on $PATH_CK_DISCOVERER $1
+	tag_delete $PATH_CK_DISCOVERY_SERVICE $1
 	tag_delete_on $PATH_CK_CUSTOMER $1
 	
 	echo "All Tagging Deleted"	
