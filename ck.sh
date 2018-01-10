@@ -76,8 +76,8 @@ tag() {
 	tag_on $PATH_CK_DISCOVERER $1
 	tag_on $PATH_CK_DISCOVERY_SERVICE $1
 	tag_on $PATH_CK_CUSTOMER $1
-	fetch_on $PATH_CK_CENTRAL_SERVICE
-	fetch_on $PATH_CK_CENTRAL_CLIENT
+	tag_on $PATH_CK_CENTRAL_SERVICE $1
+	tag_on $PATH_CK_CENTRAL_CLIENT $1
 	
 	echo "All Tagging Done"	
 }
